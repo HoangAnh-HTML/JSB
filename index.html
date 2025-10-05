@@ -1,11 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tay Nắm Tủ Cao Cấp - Nội Thất Sang Trọng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f1ea 0%, #e8dcc8 100%);
+        }
+        
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #b8956a 0%, #9d7d54 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(184, 149, 106, 0.3);
+        }
+        
+        .feature-icon {
+            background: linear-gradient(135deg, #f5f1ea 0%, #e8dcc8 100%);
+        }
+    </style>
 </head>
-<body>
-    <h1>Hoàng Anh</h1>
+<body class="bg-white text-gray-800">
+    
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800">
+                    <span style="font-family: 'Playfair Display', serif;">Dabi's Home</span>
+                </div>
+                
+                <ul class="hidden md:flex items-center gap-8">
+                    <li><a href="#trang-chu" class="text-gray-700 hover:text-amber-700 transition">Trang Chủ</a></li>
+                    <li><a href="#san-pham" class="text-gray-700 hover:text-amber-700 transition">Sản Phẩm</a></li>
+                    <li><a href="#tinh-nang" class="text-gray-700 hover:text-amber-700 transition">Tính Năng</a></li>
+                    <li><a href="#lien-he" class="text-gray-700 hover:text-amber-700 transition">Liên Hệ</a></li>
+                </ul>
+                
+                <button class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="trang-chu" class="hero-gradient pt-32 pb-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                        Nâng Tầm<br/>Không Gian Sống
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Bộ sưu tập tay nắm tủ cao cấp, kết hợp hoàn hảo giữa thẩm mỹ và chức năng. Mang đến sự sang trọng cho mọi không gian nội thất.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#san-pham" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold inline-block">
+                            Khám Phá Ngay
+                        </a>
+                        <a href="#lien-he" class="bg-white text-gray-800 px-8 py-4 rounded-lg font-semibold border-2 border-gray-300 hover:border-amber-700 transition inline-block">
+                            Liên Hệ
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://vietwood.vn/wp-content/uploads/2024/03/tay-nam-tu-dong-thau-cao-cap-VW-HAN1059-1.jpg" 
+                        alt="Tay nắm tủ cao cấp" 
+                        class="rounded-2xl shadow-2xl w-full object-cover"
+                        style="aspect-ratio: 5/6;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="san-pham" class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Bộ Sưu Tập Nổi Bật</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Từng chi tiết được chế tác tỉ mỉ, mang đến sự hoàn hảo cho không gian của bạn
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden" style="aspect-ratio: 4/3;">
+                        <img src="https://dothada.com/uploads/source/san-pham-khac/tay-nam/tay-tu-735.jpg" 
+                            alt="Tay nắm hiện đại" 
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Dòng Hiện Đại</h3>
+                        <p class="text-gray-600 mb-4">
+                            Thiết kế tối giản, đường nét sắc sảo. Hoàn hảo cho không gian đương đại.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-amber-700">Từ 250.000đ</span>
+                            <button class="text-amber-700 font-semibold hover:text-amber-800 transition">
+                                Xem thêm →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden" style="aspect-ratio: 4/3;">
+                        <img src="https://noithatvietgia.vn/wp-content/uploads/2021/10/num-tay-nam-tu-tron-co-dien-Euroware-2808-5.jpg" 
+                            alt="Tay nắm cổ điển" 
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Dòng Cổ Điển</h3>
+                        <p class="text-gray-600 mb-4">
+                            Hoa văn tinh xảo, phong cách vintage. Tôn vinh vẻ đẹp truyền thống.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-amber-700">Từ 350.000đ</span>
+                            <button class="text-amber-700 font-semibold hover:text-amber-800 transition">
+                                Xem thêm →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <div class="relative overflow-hidden" style="aspect-ratio: 4/3;">
+                        <img src="https://noithatvietgia.vn/wp-content/uploads/2021/11/H929-2.jpg" 
+                            alt="Tay nắm cao cấp" 
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Dòng Cao Cấp</h3>
+                        <p class="text-gray-600 mb-4">
+                            Chất liệu thượng hạng, hoàn thiện tinh tế. Đẳng cấp trong từng chi tiết.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-amber-700">Từ 500.000đ</span>
+                            <button class="text-amber-700 font-semibold hover:text-amber-800 transition">
+                                Xem thêm →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tinh-nang" class="py-20 px-6 bg-gradient-to-b from-white to-amber-50">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Tại Sao Chọn Chúng Tôi</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Cam kết mang đến sản phẩm chất lượng và dịch vụ hoàn hảo
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="feature-icon w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Chất Lượng Đảm Bảo</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        100% sản phẩm chính hãng, được kiểm định nghiêm ngặt. Bảo hành lên đến 5 năm.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="feature-icon w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Thiết Kế Độc Đáo</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Bộ sưu tập đa dạng, từ hiện đại đến cổ điển. Phù hợp mọi phong cách nội thất.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="feature-icon w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Giao Hàng Nhanh</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Miễn phí vận chuyển toàn quốc. Giao hàng trong 24-48h tại nội thành.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lien-he" class="py-20 px-6 bg-gradient-to-br from-amber-700 to-amber-900 text-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Nhận Tư Vấn Miễn Phí</h2>
+            <p class="text-xl mb-10 opacity-90">
+                Đăng ký ngay để nhận catalog sản phẩm và ưu đãi đặc biệt dành cho khách hàng mới
+            </p>
+            
+            <form class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input 
+                        type="email" 
+                        placeholder="Nhập email của bạn" 
+                        class="flex-1 px-6 py-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+                        required
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-white text-amber-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition whitespace-nowrap"
+                    >
+                        Đăng Ký
+                    </button>
+                </div>
+                <p class="text-sm mt-4 opacity-75">
+                    Chúng tôi tôn trọng quyền riêng tư của bạn.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Dabi's Home</h3>
+                    <p class="text-sm leading-relaxed">
+                        Chuyên cung cấp tay nắm tủ và phụ kiện nội thất cao cấp cho không gian sống hiện đại.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Sản Phẩm</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Tay Nắm Hiện Đại</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tay Nắm Cổ Điển</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tay Nắm Cao Cấp</a></li>
+                        <li><a href="#" class="hover:text-white transition">Phụ Kiện Khác</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Hỗ Trợ</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Liên Hệ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Chính Sách Bảo Hành</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hướng Dẫn Lắp Đặt</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Liên Hệ</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>📍 14 Đường Mạc Cửu, Quận 5, TP.HCM</li>
+                        <li>📞 0982 622 053</li>
+                        <li>✉️ info@dabi'shome.vn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 Dabi's Home. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
